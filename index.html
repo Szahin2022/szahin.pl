@@ -11,13 +11,24 @@
       color: #f1f1f1;
       text-align: center;
       padding: 100px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      min-height: 100vh;
+      justify-content: center;
     }
     h1 {
       font-size: 3rem;
+      margin-bottom: 0.5em;
+    }
+    p {
+      margin: 0;
+      font-size: 1.2rem;
     }
     a {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 10px;
       padding: 15px 30px;
       font-size: 1.2rem;
       background-color: #9146FF;
@@ -25,17 +36,34 @@
       text-decoration: none;
       border-radius: 10px;
       transition: background 0.3s ease;
+      width: 200px;
     }
     a:hover {
       background-color: #772ce8;
+    }
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
   </style>
 </head>
 <body>
   <h1>Witaj na Szahin.pl!</h1>
-  <p>Sprawdź mój kanał na Twitch:</p>
-  <a href="https://twitch.tv/Szahiniasty" target="_blank" rel="noopener noreferrer">
-    🔴 Oglądaj na Twitchu
-  </a>
+  
+  <div class="section">
+    <p>Sprawdź mój kanał na Twitch:</p>
+    <a href="https://twitch.tv/Szahiniasty" target="_blank" rel="noopener noreferrer">
+      🔴 Oglądaj na Twitchu
+    </a>
+  </div>
+
+  <div class="section">
+    <p>Sprawdź mój profil na Steam:</p>
+    <a href="https://steamcommunity.com/profiles/76561199393434551/" target="_blank" rel="noopener noreferrer">
+      Steam
+    </a>
+  </div>
 </body>
 </html>
